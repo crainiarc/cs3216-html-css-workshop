@@ -81,12 +81,12 @@
         </section>
         <section>
           <h2>What are they?</h2>
-            <ul>
-              <h3>CSS</h3>
-              <li>Cascading Style Sheets</li>
-              <li>Makes your HTML look really pretty</li>
-              <li>Can be embedded in HTML, or exist externally</li>
-            </ul>
+          <ul>
+            <h3>CSS</h3>
+            <li>Cascading Style Sheets</li>
+            <li>Makes your HTML look really pretty</li>
+            <li>Can be embedded in HTML, or exist externally</li>
+          </ul>
         </section>
         <section data-background="img/html-with-stylesheets.png" data-background-size="contain">
         </section>
@@ -112,37 +112,85 @@
           </script>
         </section>
         <section>
-          <h2>Block vs Inline</h2>
-          <ul>
-            <h3>Block Elements</h3>
-            <li>Typicallly starts in a new line</li>
-            <li>Takes the width of its container (can be adjusted)</li>
-            <li>Can have padding and margins</li>
-            <li>Usually used to contain other block or inline elements</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Block vs Inline</h2>
-          <ul>
+          <h2>Commonly used tags</h2>
+          <h3>Block Elements</h3>
+          <table>
+            <tr><th>HTML Tag</th><th>Example</th>
+              <tr><td><code>&lt;h1&gt;</code></td><td><code>&lt;h1&gt;On the Electodynamics of Moving Bodies&lt;/h1&gt;</code></td></tr>
+              <tr><td><code>&lt;p&gt;</code></td><td><code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></td></tr>
+              <tr><td><code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code></td><td><code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;ul&gt;</code></td></tr>
+              <tr><td><code>&lt;div&gt;</code></td><td>Generic wrapper element</td></tr>
+            </table>
+          </section>
+          <section>
+            <h2>Commonly used tags</h2>
             <h3>Inline Elements</h3>
-            <li>Typically does not bedin in a new line</li>
-            <li>Takes up the width of its contents</li>
-          </ul>
-        </section>
-        <section>
-          <h1>CSS</h1>
-        </section>
-      </div>
-    </div>
+            <table>
+              <tr><th>HTML Tag</th><th>Example</th>
+                <tr><td><code>&lt;a&gt;</code></td><td><code>&lt;a href="//google.com"&gt;Google&lt;/a&gt;</code></td></tr>
+                <tr><td><code>&lt;img&gt;</code></td><td><code>&lt;img src="image.jpg" /&gt;</code></td></tr>
+                <tr><td><code>&lt;input&gt;</code></td><td><code>&lt;input type="email" name="email" /&gt;</code></td></tr>
+                <tr><td><code>&lt;span&gt;</code></td><td>Generic wrapper element</td></tr>
+              </table>
+            </section>
+            <section>
+              <h2>Block vs Inline</h2>
+              <ul>
+                <h3>Block Elements</h3>
+                <li>Typicallly starts in a new line</li>
+                <li>Takes the width of its container (can be adjusted)</li>
+                <li>Can have padding and margins</li>
+                <li>Usually used to contain other block or inline elements</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Block vs Inline</h2>
+              <ul>
+                <h3>Inline Elements</h3>
+                <li>Typically does not bedin in a new line</li>
+                <li>Takes up the width of its contents</li>
+              </ul>
+            </section>
+            <section>
+              <h1>CSS</h1>
+            </section>
+            <section data-markdown>
+              <script type="text/template">
+## How to use CSS
 
-    <script src="revealjs/lib/js/head.min.js"></script>
-    <script src="revealjs/js/reveal.min.js"></script>
+### Embedded
+```
+ <style>
+   p {
+     font-weight: bold;
+     color: red;
+   }
+ </style>
+```
 
-    <script>
+### Externally
+```
+<link rel="stylesheet" href="main.css" />
+```
 
-      // Full list of configuration options available here:
-      // https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
+
+### Inline
+``` 
+ <p style="font-weight: bold;">Hello, world!</p>
+```
+              </script>
+            </section>
+          </div>
+        </div>
+
+        <script src="revealjs/lib/js/head.min.js"></script>
+        <script src="revealjs/js/reveal.min.js"></script>
+
+        <script>
+
+          // Full list of configuration options available here:
+          // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
 controls: true,
 progress: true,
 history: true,
@@ -163,10 +211,10 @@ dependencies: [
 { src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 { src: 'revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 { src: 'revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-    ]
-    });
+        ]
+        });
 
-    </script>
+        </script>
 
-  </body>
-</html>
+      </body>
+    </html>
