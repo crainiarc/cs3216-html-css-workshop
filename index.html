@@ -184,7 +184,7 @@
               <script type="text/template">
 ## CSS Selectors
 
-Elements
+Type
 ```
 p {
   font-size: 14px;
@@ -227,6 +227,87 @@ nav > ul {
 ```
               </script>
             </section>
+            <section data-markdown>
+              <script type="text/template">
+## Question: What is the colour of the text?
+HTML
+```
+<div id="test">
+  <span>Text</span>
+</div>
+```
+
+CSS
+```
+div#test span { color: green }
+span { color: red }
+div span { color: blue }
+```
+              </script>
+            </section>
+            <section>
+              <h2>Specificity</h2>
+              <ul>
+                <p>In order of increasing specificity</p>
+                <li>Universal</li>
+                <li>Type</li>
+                <li>Classes</li>
+                <li>Attributes</li>
+                <li>Pseudo-Classes</li>
+                <li>IDs</li>
+                <li>Inline Styles</li>
+              </ul>
+            </section>
+          <section>
+            <h1>Best Practices</h1>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+## Reset your stylesheets
+```
+* {
+  margin: 0;
+  padding: 0;
+}
+```
+More resets
+
+- [Eric Meyer's Reset CSS](http://meyerweb.com/eric/tools/css/reset/)
+- [YUI3 Reset CSS](http://yuilibrary.com/yui/docs/cssreset/)
+- [Normalize.css](http://necolas.github.io/normalize.css/)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+## Sprite your icons
+
+![Google's sprite image](img/sprite.png)
+
+```
+#icon-1 {
+  display: inline-block;
+  background: url('sprite.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999;
+  text-align: left;
+  background-position: 0px -20px;
+  width: 20px;
+  height: 20px;
+}
+```
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+## You dont have to start from scratch
+
+- [HTML5 Boilerplate](http://html5boilerplate.com)
+- [Bootstrap](http://getbootstrap.com)
+            </script>
+          </section>
+          <section>
+            <h1>Thank You!</h1>
+          </section>
           </div>
         </div>
 
