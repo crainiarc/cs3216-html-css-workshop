@@ -1,2 +1,2 @@
-cs3216-html-css-workshop
+CS3216 HTML/CSS Workshop
 ========================
